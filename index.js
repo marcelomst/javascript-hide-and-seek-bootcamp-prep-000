@@ -6,10 +6,8 @@ function nestedTarget() {
 }
 function increaseRankBy(n){
   var ElementsRanquedList = document.querySelectorAll('ul.ranked-list li');
-  var newRank = 0;
   for (let i = 0; i < ElementsRanquedList.length; i++) {
-    newRank =  parseInt(ElementsRanquedList[i].innerHTML) + n;
-    ElementsRanquedList[i].innerHTML = newRank.toString();
+   ElementsRanquedList[i].innerHTML =  (parseInt(ElementsRanquedList[i].innerHTML) + n).toString();
   }
 }
 function deepestChild(){
